@@ -1,21 +1,18 @@
 import React from "react";
 import { FaTrash } from "react-icons/fa";
 
-const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
-  // Umumiy narx
-  const totalPrice = cartItems.reduce((total, item) => {
-    const price = Number(item.price) || 0; // NaN oldini olish
-    return total + price * (item.quantity || 1);
-  }, 0);
+const Cart = ({ cartItems, removeFromCart }) => {
+  const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
 
   return (
     <div className="flex items-start justify-between gap-6">
-      <div className="relative bg-[#020817] p-4 rounded-lg border border-[#6b6b6b5d] w-full min-h-[300px]">
+      <div className=" relative bg-[#020817] p-4 rounded-lg border border-[#6b6b6b5d] w-full  min-h-[300px]">
+        {/* <h2 className="text-xl text-white font-bold mb-4">Savat</h2> */}
         {cartItems.length === 0 ? (
           <img
             src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-10929686-8779492.png"
-            alt="cart image"
-            className="absolute top-1/2 left-1/2 w-40 -translate-x-1/2 -translate-y-1/2"
+            alt=" cart image"
+            className="absolute top-1/2 left-1/2 w-35 -translate-x-1/2 -translate-y-1/2 "
           />
         ) : (
           <>
@@ -33,25 +30,7 @@ const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
                     />
                     <div>
                       <h3 className="font-medium text-white">{item.title}</h3>
-                      <p className="text-gray-400">
-                        ${(Number(item.price) || 0).toFixed(2)}
-                      </p>
-                      {/* Quantity control */}
-                      <div className="flex items-center gap-2 mt-2">
-                        <button
-                          onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                          className="px-2 py-1 bg-gray-700 text-white rounded hover:bg-gray-600"
-                        >
-                          −
-                        </button>
-                        <span className="text-white">{item.quantity}</span>
-                        <button
-                          onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                          className="px-2 py-1 bg-gray-700 text-white rounded hover:bg-gray-600"
-                        >
-                          +
-                        </button>
-                      </div>
+                      <p className="text-gray-400">${item.price}</p>
                     </div>
                   </div>
                   <button
@@ -75,6 +54,7 @@ const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
           </>
         )}
       </div>
+
     </div>
   );
 };
