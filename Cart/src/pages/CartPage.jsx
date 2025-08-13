@@ -6,12 +6,12 @@ const CartPage = ({ cartItems, removeFromCart }) => {
     <div className="container mx-auto py-8 px-4">
       <div className="max-w-3xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold">Savat</h1>
+          <h1 className="text-3xl text-white font-bold">Savat</h1>
           <Link
             to="/"
             className="text-blue-600 hover:text-blue-800 font-medium"
           >
-            ← Orqaga
+             Orqaga
           </Link>
         </div>
         <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
