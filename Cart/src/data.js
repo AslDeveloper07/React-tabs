@@ -1,13 +1,13 @@
 export const products = [
   {
     id: 1,
-    title: "Smartphone X",
+    title: "Smartphone 16",
     description:
       'Yangi avlod smartfoni, 128GB xotira, 6.5" ekran, kuchli protsessor, ilg‘or kamera, tez zaryadlash, qulay dizayn, simsiz zaryadlash, AMOLED displey, 5G qo‘llab-quvvatlash, suvga chidamli, kuchli himoya, keng xotira, sifatli ovoz, premium ko‘rinish, energiya tejamkorlik, ko‘p rangli, barqaror ishlash, xavfsizlik tizimi, qulay interfeys.',
     price: 799,
     rating: 4.5,
     image:
-      "https://images-cdn.ubuy.co.in/634d0088267ddb563c103182-simple-mobile-apple-iphone-x-64gb.jpg",
+      "https://btech.com/media/catalog/product/cache/b8c58ae5296cf3a86859549672e2fba3/a/3/a3dff4b3e6ebabd3623e22345afd72605c6ac5644e3b26557edf9958b1228bfb.jpeg",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const products = [
     price: 199,
     rating: 4.2,
     image:
-      "https://shop.leafstudios.in/cdn/shop/files/1_c8257237-62f6-4d49-bed7-3305d6eb3534_800x.png?v=1740556058",
+      "https://suhadha.lk/wp-content/uploads/2024/02/HK9-Ultra-2-Smartwatch-black-price-in-bd-1-1200x1200.webp",
   },
   {
     id: 4,
@@ -60,16 +60,17 @@ export const products = [
     image:
       "https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/jioretailer/products/pictures/item/free/original/eYeIBBxuzX-bpl-32-hd-television-492166140-i-1-1200wx1200h.jpeg",
   },
-  {
-    id: 7,
-    title: "Fotokamera",
-    description:
-      "24.2MP, 4K video yozish qobiliyatiga ega, 3 yil kafolat, kuchli linza, tez fokus, yuqori aniqlik, premium dizayn, qulay o‘rnatish, engil vazn, uzoq batareya, ko‘p sozlamalar, professional rejim, barqaror ishlash, suvga chidamli, changdan himoya, yuqori sifatli suratlar, qulay boshqaruv, keng ekran, tez ishlov berish, zamonaviy texnologiya.",
-    price: 749,
-    rating: 4.3,
-    image:
-      "https://m.media-amazon.com/images/I/71Wy3LqUcUL._AC_SL1000_.jpg",
-  },
+{
+  id: 7,
+  title: "Dron Kamera",
+  description:
+    "4K UHD kamera, uzoq masofadan boshqaruv, barqaror parvoz tizimi, GPS navigatsiya, avtomatik qaytish funksiyasi, 3 o‘qli stabilizator, uzoq batareya muddati, tez zaryadlash, shamolga chidamli, qulay boshqaruv pulti, jonli video uzatish, engil va ixcham dizayn, xavfsizlik sensori, premium sifat, professional suratga olish rejimlari, keng ko‘rinish burchagi, oson sozlash, qulay saqlash qutisi, kuchli motorlar, zamonaviy texnologiya.",
+  price: 999,
+  rating: 4.8,
+  image:
+    "https://cdn.bdstall.com/product-image/giant_335616.jpg",
+},
+
   {
     id: 8,
     title: "O'yin konsoli",
@@ -107,7 +108,7 @@ export const products = [
     "Aqlli robot o‘yinchoq, ovoz va harakat sensorlari, masofadan boshqaruv, interaktiv o‘yinlar, yuqori sifatli plastmassa, xavfsiz dizayn, uzoq batareya muddati, yorqin LED chiroqlar, raqs va musiqa funksiyasi, ta’lim dasturlari, qulay boshqaruv tugmalari, barqaror ishlash, ekologik toza materiallar, tez zaryadlash, yengil vazn, premium sifat, qulay tutqich, ijodiy rivojlantiruvchi o‘yinlar, oson sozlash, zamonaviy ko‘rinish.",
   price: 149,
   rating: 4.7,
-  image: "https://img.freepik.com/free-vector/graident-ai-robot-vectorart_78370-4114.jpg?semt=ais_hybrid&w=740&q=80 ",
+  image: "https://t3.ftcdn.net/jpg/11/95/09/00/360_F_1195090022_nNVkInN164moVMLka1QgUTXebNbLHkVt.jpg ",
 },
 
 {

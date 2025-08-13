@@ -1,5 +1,3 @@
-import React from "react";
-import { FaStar } from "react-icons/fa";
 import { IoIosCart } from "react-icons/io";
 import InteractiveStarRating from "./InteractiveStarRating ";
 
@@ -13,11 +11,13 @@ const ProductCard = ({ product, addToCart }) => {
       />
       <div className="pt-2 px-2 pb-2">
         <h3 className="text-md font-semibold  text-white">{product.title}</h3>
-        <p className="text-gray-600 mb-3 text-[13px] leading-tight line-clamp-2">{product.description}</p>
+        <p className="text-gray-500 mb-3 text-[13px] leading-tight line-clamp-2">
+          {product.description}
+        </p>
         <div className="flex justify-between items-center mb-3">
           <span className="text-white font-bold">${product.price}</span>
           <div className="flex items-center">
-          <InteractiveStarRating/>
+            <InteractiveStarRating />
           </div>
         </div>
         <button

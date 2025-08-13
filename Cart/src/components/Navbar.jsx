@@ -11,7 +11,7 @@ const Navbar = ({ cartItems }) => {
         </Link>
         <div className="relative">
           <Link to="/cart" className="flex items-center">
-            <IoIosCart className="text-2xl" />
+<IoIosCart className="text-2xl" />
             {cartItems.length > 0 && (
               <span className="absolute -top-[2px] -right-1 bg-red-500 text-white text-[9px] font-bold rounded-full h-3 w-3 flex items-center justify-center">
                 {cartItems.length}

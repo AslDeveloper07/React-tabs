@@ -5,10 +5,10 @@ const Cart = ({ cartItems, removeFromCart }) => {
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
 
   return (
-    <div className="bg-[#020817] p-4 rounded-lg border border-[#6b6b6b5d] ">
+    <div className=" relative bg-[#020817] p-4 rounded-lg border border-[#6b6b6b5d]  min-h-[300px]">
       {/* <h2 className="text-xl text-white font-bold mb-4">Savat</h2> */}
       {cartItems.length === 0 ? (
-        <img src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-10929686-8779492.png" alt="cart image" className="w-35 py-20 " />
+        <img src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-10929686-8779492.png" alt=" cart image" className="absolute top-1/2 left-1/2 w-35 -translate-x-1/2 -translate-y-1/2 " />
       ) : (
         <>
           <ul className="divide-y divide-[#6b6b6b5d] flex gap-2 flex-col">
