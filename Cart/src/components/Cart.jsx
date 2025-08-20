@@ -7,7 +7,6 @@ const Cart = ({ cartItems, removeFromCart }) => {
   return (
     <div className="flex items-start justify-between gap-6">
       <div className=" relative bg-[#020817] p-4 rounded-lg border border-[#6b6b6b5d] w-full  min-h-[300px]">
-        {/* <h2 className="text-xl text-white font-bold mb-4">Savat</h2> */}
         {cartItems.length === 0 ? (
           <img
             src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-10929686-8779492.png"
