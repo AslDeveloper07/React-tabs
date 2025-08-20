@@ -33,7 +33,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
                     </div>
                   </div>
                   <div>
-                   <button
+                   <button 
                     onClick={() => removeFromCart(item.id)}
                     className="text-red-500 hover:text-red-700 px-3"
                   >
