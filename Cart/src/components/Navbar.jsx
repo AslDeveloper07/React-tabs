@@ -22,6 +22,6 @@ const Navbar = ({ cartItems }) => {
       </div>
     </nav>
   );
-};
+};s
 
 export default Navbar;
